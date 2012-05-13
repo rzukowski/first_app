@@ -4,6 +4,7 @@ gem 'rails', '3.2.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'carrierwave'
 
 group :production do
 	gem 'pg', '0.12.2'  
@@ -11,9 +12,9 @@ end
 group :development, :test do 
 	gem 'sqlite3', '1.3.6' 
 end 
-
+gem 'therubyracer'
 gem 'json'
-
+gem 'kaminari'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -22,11 +23,9 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
-
+ gem 'simple_form'
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'therubyracer'
 
 gem 'jquery-rails'
 
